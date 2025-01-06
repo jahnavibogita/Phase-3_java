@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class CgpaToPercentage {
+    public static double convertCgpaToPercentage(double cgpa) {
+        return cgpa * 9.5;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter CGPA (out of 10): ");
+        double cgpa = scanner.nextDouble();
+        double percentage = convertCgpaToPercentage(cgpa);
+        System.out.printf("The equivalent percentage is: %.2f%%\n", percentage);
+        scanner.close();
+    }
+}
